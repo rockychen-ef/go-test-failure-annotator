@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="0" failures="0" time="0.000000" name="elb2c/rest-api-sample">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="18" failures="0" time="0.000000" name="elb2c/rest-api-sample/handler">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestList" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return200" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return404" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPost" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPost_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPutCreate" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPutUpdate" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return400_EmptyFields" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return400_InvalidID" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return404" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete_Return404" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="elb2c/rest-api-sample/model">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="6" failures="0" time="0.000000" name="elb2c/rest-api-sample/repository">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestSave_Create" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindAll" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindByID" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindByID_NotFound" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestSave_Update" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestRemove" time="0.000000"></testcase>
+	</testsuite>
+</testsuites>

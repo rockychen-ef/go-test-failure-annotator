@@ -1,0 +1,6 @@
+name: 'Teat Failure Annotator'
+description: 'Annotate Go test failures'
+author: 'Rocky'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

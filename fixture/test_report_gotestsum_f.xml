@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="0" failures="0" time="0.000000" name="elb2c/rest-api-sample">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="18" failures="1" time="0.000000" name="elb2c/rest-api-sample/handler">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestList" time="0.000000">
+			<failure message="Failed" type="">=== RUN   TestList&#xA;--- FAIL: TestList (0.00s)&#xA;    user_handler_test.go:53: &#xA;        &#x9;Error Trace:&#x9;user_handler_test.go:53&#xA;        &#x9;Error:      &#x9;Not equal: &#xA;        &#x9;            &#x9;expected: []interface {}{map[string]interface {}{&#34;email&#34;:&#34;test1@qp1.org&#34;, &#34;id&#34;:11, &#34;name&#34;:&#34;Test1&#34;}, map[string]interface {}{&#34;email&#34;:&#34;test2@qp1.org&#34;, &#34;id&#34;:2, &#34;name&#34;:&#34;Test2&#34;}, map[string]interface {}{&#34;email&#34;:&#34;test3@qp1.org&#34;, &#34;id&#34;:3, &#34;name&#34;:&#34;Test3&#34;}}&#xA;        &#x9;            &#x9;actual  : []interface {}{map[string]interface {}{&#34;email&#34;:&#34;test1@qp1.org&#34;, &#34;id&#34;:1, &#34;name&#34;:&#34;Test1&#34;}, map[string]interface {}{&#34;email&#34;:&#34;test2@qp1.org&#34;, &#34;id&#34;:2, &#34;name&#34;:&#34;Test2&#34;}, map[string]interface {}{&#34;email&#34;:&#34;test3@qp1.org&#34;, &#34;id&#34;:3, &#34;name&#34;:&#34;Test3&#34;}}&#xA;        &#x9;            &#x9;&#xA;        &#x9;            &#x9;Diff:&#xA;        &#x9;            &#x9;--- Expected&#xA;        &#x9;            &#x9;+++ Actual&#xA;        &#x9;            &#x9;@@ -3,3 +3,3 @@&#xA;        &#x9;            &#x9;   (string) (len=5) &#34;email&#34;: (string) (len=13) &#34;test1@qp1.org&#34;,&#xA;        &#x9;            &#x9;-  (string) (len=2) &#34;id&#34;: (float64) 11,&#xA;        &#x9;            &#x9;+  (string) (len=2) &#34;id&#34;: (float64) 1,&#xA;        &#x9;            &#x9;   (string) (len=4) &#34;name&#34;: (string) (len=5) &#34;Test1&#34;&#xA;        &#x9;Test:       &#x9;TestList&#xA;</failure>
+		</testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return200" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestGet_Return404" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPost" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPost_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPutCreate" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPutUpdate" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return400_EmptyFields" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPut_Return400_InvalidID" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return404" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestPatch_Return500" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete_Return400" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/handler" name="TestDelete_Return404" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="elb2c/rest-api-sample/model">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="6" failures="1" time="0.000000" name="elb2c/rest-api-sample/repository">
+		<properties>
+			<property name="go.version" value="go1.12.7 darwin/amd64"></property>
+		</properties>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestSave_Create" time="0.000000">
+			<failure message="Failed" type="">=== RUN   TestSave_Create&#xA;--- FAIL: TestSave_Create (0.00s)&#xA;    user_repo_test.go:81: &#xA;        &#x9;Error Trace:&#x9;user_repo_test.go:81&#xA;        &#x9;Error:      &#x9;Not equal: &#xA;        &#x9;            &#x9;expected: 3&#xA;        &#x9;            &#x9;actual  : 4&#xA;        &#x9;Test:       &#x9;TestSave_Create&#xA;</failure>
+		</testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindAll" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindByID" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestFindByID_NotFound" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestSave_Update" time="0.000000"></testcase>
+		<testcase classname="elb2c/rest-api-sample/repository" name="TestRemove" time="0.000000"></testcase>
+	</testsuite>
+</testsuites>
