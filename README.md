@@ -27,7 +27,7 @@ Please find the following example for your GitHub workflow
 
 ```
     - name: Annotate test failures
-      uses: rockychen-ef/go-test-failure-annotator
+      uses: rockychen-ef/go-test-failure-annotator@v1.0
       env:
         TEST_RESULT: /test-results/test_report.xml
         GITHUB_API_URL: https://api.github.com
