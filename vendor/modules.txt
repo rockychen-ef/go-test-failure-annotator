@@ -1,0 +1,12 @@
+# github.com/davecgh/go-spew v1.1.0
+github.com/davecgh/go-spew/spew
+# github.com/golang/mock v1.3.1
+github.com/golang/mock/gomock
+# github.com/joeshaw/envdecode v0.0.0-20190604014844-d6d9849fcc2c
+github.com/joeshaw/envdecode
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/testify v1.4.0
+github.com/stretchr/testify/assert
+# gopkg.in/yaml.v2 v2.2.2
+gopkg.in/yaml.v2
